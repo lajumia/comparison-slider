@@ -9,8 +9,8 @@ function comparison_slider_shortcode_preview() {
     ]);
 
     // Default images if not set
-    $before_image = !empty($settings['before_image']) ? esc_url($settings['before_image']) : 'https://via.placeholder.com/600x400/0000FF/808080?text=Before+Image';
-    $after_image  = !empty($settings['after_image']) ? esc_url($settings['after_image']) : 'https://via.placeholder.com/600x400/FF0000/808080?text=After+Image';
+    $before_image = !empty($settings['before_image']) ? esc_url($settings['before_image']) : 'https://github.com/lajumia/comparison-slider/blob/main/Before.jpeg';
+    $after_image  = !empty($settings['after_image']) ? esc_url($settings['after_image']) : 'https://github.com/lajumia/comparison-slider/blob/main/After.jpeg';
     $width        = isset($settings['width']) ? intval($settings['width']) : 600;
 
     ob_start(); ?>
@@ -21,11 +21,11 @@ function comparison_slider_shortcode_preview() {
             <div class="comparison-slider-wrapper">
                 <div class="comparison-slider">
                     <div class="overlay">And I am the <strong>after</strong> image.</div>
-                    <img src="https://raw.githubusercontent.com/Mario-Duarte/CodePen/main/assets/marioPhoto-2.jpg" alt="marioPhoto 2"/>
+                    <img src="<?php echo $before_image;?>" alt="Before Image"/>
                 
                     <div class="resize">
                         <div class="overlay">I am the <strong>before</strong> image.</div>
-                        <img className="second-img" src="https://raw.githubusercontent.com/Mario-Duarte/CodePen/main/assets/marioPhoto-1.jpg" alt="marioPhoto 1"/>
+                        <img className="second-img" src="<?php echo $after_image;?>" alt="After Image"/>
                     </div>
                 
                     <div class="divider"></div>
