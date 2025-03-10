@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name:       Comparison Slider
- * Plugin URI:        https://yourwebsite.com
+ * Plugin URI:        https://github.com/lajumia/comparison-slider
  * Description:       A simple before/after comparison slider plugin.
  * Version:           1.0
  * Author:            Md Laju Miah
